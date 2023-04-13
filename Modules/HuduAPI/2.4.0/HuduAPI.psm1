@@ -344,7 +344,7 @@ function Get-HuduAppInfo {
     [CmdletBinding()]
     Param()
 
-    [version]$script:HuduRequiredVersion = '2.22'
+    [version]$script:HuduRequiredVersion = '2.21'
     
     try {
         Invoke-HuduRequest -Resource '/api/v1/api_info'
