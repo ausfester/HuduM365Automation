@@ -1305,7 +1305,7 @@ function New-HuduAPIKey {
         if ($script:Int_HuduBaseURL) {
             [version]$version = (Get-HuduAppInfo).version
             if ($version -lt $script:HuduRequiredVersion) {
-                Write-Warning "A connection error occured or Hudu version is below $script:HuduRequiredVersion"
+                Write-Warning "A connection error occured or Hudu version is below $script:HuduRequiredVersion Current vsersion:$version"
             }
         }
     }
